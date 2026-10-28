@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+  flex-direction:column;
+  gap: 50px;
+}
+.card-container{
+  display: grid;
+  /* auto-fit:전체너비에 맞춰서 적용, auto-fill:아이템의 너비에 맞춰서 적용 */
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); 
+  gap: 10px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10%;
+}
+.card-img{
+  background-image:url("../images/dog.jpg");
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  border-radius: 10%;
+  padding-top: 66%;
+}
